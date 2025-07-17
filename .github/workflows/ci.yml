@@ -7,14 +7,20 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.11, 3.12, 3.13]
+        python-version: [3.8, 3.9, 3.10, 3.12, 3.13]
     steps:
       - uses: actions/checkout@v3
+      - name: Install system dependencies for PySide6
+        run: sudo apt-get update && sudo apt-get install -y \
+          libegl1-mesa libgl1-mesa-glx libgl1-mesa-dri
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
-      - run: python -m venv venv
-      - run: . venv/bin/activate
-      - run: pip install -r requirements.txt
-      - run: PYTHONPATH=. pytest
+      - name: Create and activate virtual environment
+        run: |
+          python -m venv venv
+          . venv/bin/activate
+          pip install -r requirements.txt
+          pytest --maxfail=1 --disable-warnings -q
+        shell: bash
