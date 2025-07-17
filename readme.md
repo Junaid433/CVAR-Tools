@@ -51,4 +51,7 @@ python main.py
 
 ## Contact: 
 
-Telegram: [fahecker](https://t.me/fakehecker)
+ ##### Telegram: [fahecker](https://t.me/fakehecker)
+ ##### Facebook: [Junaid Rahman](https://facebook.com/jnaid.rahman.im)
+
+---
