@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QTabWidget,
-    QWidget, QVBoxLayout
 )
+from PySide6.QtGui import QIcon
 import sys
 
 from UI.Encryption import CVAREncryptor
@@ -11,6 +11,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("PUBG Mobile CVAR Tool")
+        self.setWindowIcon(QIcon("Icons/icon.ico"))
 
         tabs = QTabWidget()
 
