@@ -44,8 +44,8 @@ python main.py
 
 ## Ready to use binaries: 
 
-  ### Windows: https://github.com/Junaid433/CVAR-Tools/releases/download/v0.1/CVARTool-windows-3.13.exe
-  ### Linux: https://github.com/Junaid433/CVAR-Tools/releases/download/v0.1/CVARTool-linux-3.13
+  ##### Windows: [Click HERE](https://github.com/Junaid433/CVAR-Tools/releases/download/v0.1/CVARTool-windows-3.13.exe)
+  ##### Linux: [Click HERE](https://github.com/Junaid433/CVAR-Tools/releases/download/v0.1/CVARTool-linux-3.13)
 
 --- 
 
