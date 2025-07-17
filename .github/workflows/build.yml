@@ -70,7 +70,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: linux-bin-${{ matrix.python-version }}
+          name: linux-bin-3.13
           path: dist-release/main
 
   release:
