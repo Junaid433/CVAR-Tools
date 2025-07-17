@@ -42,7 +42,7 @@ python main.py
 ```
 ---
 
-## Ready to use binaries: 
+## Ready to use executables: 
 
   ##### Windows: [Click HERE](https://github.com/Junaid433/CVAR-Tools/releases/download/v0.1/CVARTool-windows-3.13.exe)
   ##### Linux: [Click HERE](https://github.com/Junaid433/CVAR-Tools/releases/download/v0.1/CVARTool-linux-3.13)
