@@ -81,30 +81,30 @@ jobs:
     needs: [build-windows, build-linux]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
       - name: Download Windows artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v3
         with:
           name: windows-exe-3.12
           path: dist-release
 
       - name: Download Linux artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v3
         with:
           name: linux-bin-3.12
           path: dist-release
 
       - name: Create GitHub Release
         id: create_release
-        uses: softprops/action-gh-release@v4
+        uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ github.ref_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload executables to Release
-        uses: softprops/action-gh-release@v4
+        uses: softprops/action-gh-release@v1
         with:
           files: dist-release/*
         env:
