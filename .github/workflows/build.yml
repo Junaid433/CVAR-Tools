@@ -29,6 +29,7 @@ jobs:
 
       - name: Prepare artifact
         run: mkdir dist-release
+
       - run: copy dist\main.exe dist-release\CVARTool-windows-${{ matrix.python-version }}.exe
 
       - name: Upload artifact
@@ -65,13 +66,14 @@ jobs:
 
       - name: Prepare artifact
         run: mkdir dist-release
+
       - run: cp dist/main dist-release/CVARTool-linux-${{ matrix.python-version }}
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: linux-bin-3.13
-          path: dist-release/main
+          name: linux-bin-${{ matrix.python-version }}
+          path: dist-release/CVARTool-linux-${{ matrix.python-version }}
 
   release:
     needs: [build-windows, build-linux]
