@@ -1,6 +1,6 @@
 # PUBG CVAR Tools
 
-[![Build Status](https://github.com/Junaid433/CVAR-Tools/actions/runs/16357166201)
+[![Build Status](https://github.com/Junaid433/CVAR-Tools/actions/workflows/build.yml/badge.svg)](https://github.com/Junaid433/CVAR-Tools/actions/workflows/build.yml)
 
 ---
 
