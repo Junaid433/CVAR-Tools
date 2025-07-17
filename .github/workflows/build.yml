@@ -82,13 +82,13 @@ jobs:
       - name: Download Windows artifacts
         uses: actions/download-artifact@v4
         with:
-          name: windows-exe-3.12
+          name: windows-exe-3.13
           path: dist-release
 
       - name: Download Linux artifacts
         uses: actions/download-artifact@v4
         with:
-          name: linux-bin-3.12
+          name: linux-bin-3.13
           path: dist-release
 
       - name: Create GitHub Release
