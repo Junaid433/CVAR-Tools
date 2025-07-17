@@ -1,6 +1,9 @@
 name: Build Executables and Release
 
-on: [push, pull_request]
+on:
+  push:
+    tags:
+      - '*'
 
 jobs:
   build-windows:
