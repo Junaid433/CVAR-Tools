@@ -1,8 +1,6 @@
 # PUBG CVAR Tools
 
-[![PyPI version](https://img.shields.io/pypi/v/pubg-cvar-tools.svg)](https://pypi.org/project/pubg-cvar-tools/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Build Status](https://github.com/yourusername/pubg-cvar-tools/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/pubg-cvar-tools/actions/workflows/ci.yml)
+[![Build Status](https://github.com/yourusername/pubg-cvar-tools/actions/workflows/ci.yml/badge.svg)](https://github.com/Junaid433/cvar-tools/actions/workflows/ci.yml)
 
 ---
 
