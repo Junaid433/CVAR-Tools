@@ -34,10 +34,8 @@ A Python toolkit with a PySide6 GUI to **encrypt** and **decrypt** PUBG Mobile C
 Ensure you have Python 3.8+ installed. Then:
 
 ```bash
-git clone https://github.com/yourusername/pubg-cvar-tools.git
-cd pubg-cvar-tools
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+git clone https://github.com/Junaid433/CVAR-Tools.git
+cd CVAR-Tools
 pip install -r requirements.txt
 python main.py
 ```
